@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CafeAlessio.Service", "Cafe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CafeAlessio.Web", "CafeAlessio.Web\CafeAlessio.Web.csproj", "{C02A3FB9-B440-4912-939A-99A7CD37B5E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CafeAlessio.Data", "CafeAlessio.Data\CafeAlessio.Data.csproj", "{C4FB3B8B-9164-4A6B-9875-24C1249AFD5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C02A3FB9-B440-4912-939A-99A7CD37B5E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C02A3FB9-B440-4912-939A-99A7CD37B5E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C02A3FB9-B440-4912-939A-99A7CD37B5E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4FB3B8B-9164-4A6B-9875-24C1249AFD5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4FB3B8B-9164-4A6B-9875-24C1249AFD5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4FB3B8B-9164-4A6B-9875-24C1249AFD5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4FB3B8B-9164-4A6B-9875-24C1249AFD5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
