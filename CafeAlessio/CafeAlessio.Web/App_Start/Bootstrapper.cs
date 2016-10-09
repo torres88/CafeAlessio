@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using Autofac.Integration.Mvc;
+using CafeAlessio.Data;
 using CafeAlessio.Data.Repositories;
 using CafeAlessio.Service;
 using System;
@@ -22,6 +23,7 @@ namespace CafeAlessio.Web.App_Start
         {
             var builder = new ContainerBuilder();
             builder.RegisterControllers(Assembly.GetExecutingAssembly());
+            builder.RegisterType<AlessioContext>().As<AlessioContext>().InstancePerRequest();
             //builder.RegisterType<UnitOfWork>().As<IUnitOfWork>().InstancePerRequest();
             //builder.RegisterType<DbFactory>().As<IDbFactory>().InstancePerRequest();
 
