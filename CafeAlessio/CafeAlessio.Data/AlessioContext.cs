@@ -12,7 +12,7 @@ namespace CafeAlessio.Data
     {
         public DbSet<UserEntity> Users { get; set; }
 
-        //public AlessioContext(DbContextOptions options) : base(options) { }
+        public AlessioContext() : base("CafeAlessio") { }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

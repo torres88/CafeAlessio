@@ -40,7 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IUserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CafeAlessio.Data\CafeAlessio.Data.csproj">
+      <Project>{c4fb3b8b-9164-4a6b-9875-24c1249afd5a}</Project>
+      <Name>CafeAlessio.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CafeAlessio.Domain\CafeAlessio.Domain.csproj">
+      <Project>{21fcf2a6-c5ed-4566-8d2a-5a8a74294e0c}</Project>
+      <Name>CafeAlessio.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

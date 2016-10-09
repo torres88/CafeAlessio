@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CafeAlessio.Web.App_Start;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,6 +14,8 @@ namespace CafeAlessio.Web
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+            Bootstrapper.Run();
         }
     }
 }
