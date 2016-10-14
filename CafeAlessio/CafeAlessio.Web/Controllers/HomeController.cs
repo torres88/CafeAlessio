@@ -1,6 +1,8 @@
-﻿using CafeAlessio.Domain.Entities;
+﻿using AutoMapper;
+using CafeAlessio.Domain.Entities;
 using CafeAlessio.Service;
 using CafeAlessio.Service.Abstract;
+using CafeAlessio.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +24,9 @@ namespace CafeAlessio.Web.Controllers
         public ActionResult Index()
         {
             IEnumerable<UserEntity> users = _userService.GetUsers();
+
+            Mapper.Map<IEnumerable<UserViewModel>>(users);
+
             return View(users);
         }
 

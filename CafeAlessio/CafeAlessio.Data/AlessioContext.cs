@@ -19,5 +19,7 @@ namespace CafeAlessio.Data
             modelBuilder.Entity<UserEntity>()
             .ToTable("User");
         }
+
+        
     }
 }

@@ -51,6 +51,10 @@
       <HintPath>..\packages\Autofac.Mvc5.4.0.0\lib\net451\Autofac.Integration.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="AutoMapper, Version=5.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.5.1.1\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -123,6 +127,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Mapping\AutoMapperConfiguration.cs" />
+    <Compile Include="Models\Mapping\DomainToViewModelMappingProfile.cs" />
+    <Compile Include="Models\UserViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -139,13 +146,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CafeAlessio.Data\CafeAlessio.Data.csproj">
-      <Project>{c4fb3b8b-9164-4a6b-9875-24c1249afd5a}</Project>
-      <Name>CafeAlessio.Data</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CafeAlessio.Domain\CafeAlessio.Domain.csproj">
       <Project>{21fcf2a6-c5ed-4566-8d2a-5a8a74294e0c}</Project>
       <Name>CafeAlessio.Domain</Name>

@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace CafeAlessio.Domain.Entities
+namespace CafeAlessio.Web.Models
 {
-    public class UserEntity : IEntityBase
+    public class UserViewModel
     {
         public int Id { get; set; }
         public string Firstname { get; set; }
