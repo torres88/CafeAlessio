@@ -11,12 +11,12 @@ using System.Threading.Tasks;
 
 namespace CafeAlessio.Data.Repositories
 {
-    public class EntityBaseRepository<T> : IEntityBaseRepository<T> where T : class, IEntityBase, new()
+    public class RepositoryBase<T> : IRepository<T> where T : class, IEntity, new()
     {
         private AlessioContext _context;
 
         #region Properties
-        public EntityBaseRepository(AlessioContext context)
+        public RepositoryBase(AlessioContext context)
         {
             _context = context;
         }

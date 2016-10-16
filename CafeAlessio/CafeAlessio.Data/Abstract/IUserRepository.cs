@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CafeAlessio.Data.Abstract
 {
-    public interface IUserRepository : IEntityBaseRepository<UserEntity>
+    public interface IUserRepository : IRepository<UserEntity>
     {
     }
 }

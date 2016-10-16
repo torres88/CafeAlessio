@@ -7,11 +7,7 @@ using System.Threading.Tasks;
 
 namespace CafeAlessio.Service.Abstract
 {
-    public interface IUserService
-    {
-        IEnumerable<UserEntity> GetUsers();
-        UserEntity GetUser(int id);
-        void CreateUser(UserEntity user);
-        void SaveUser();
+    public interface IUserService : ICafeAlessioService<UserEntity>
+    {       
     }
 }

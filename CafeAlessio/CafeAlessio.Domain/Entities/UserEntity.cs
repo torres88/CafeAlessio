@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CafeAlessio.Domain.Entities
 {
-    public class UserEntity : IEntityBase
+    public class UserEntity : IEntity
     {
         public int Id { get; set; }
         public string Firstname { get; set; }

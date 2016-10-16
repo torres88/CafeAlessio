@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CafeAlessio.Data.Abstract
 {
-    public interface IEntityBaseRepository<T> where T : class, IEntityBase
+    public interface IRepository<T> where T : class, IEntity
     {
         IEnumerable<T> AllIncluding(params Expression<Func<T, object>>[] includeProperties);
         IEnumerable<T> GetAll();

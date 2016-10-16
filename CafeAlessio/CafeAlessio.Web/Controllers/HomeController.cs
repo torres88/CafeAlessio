@@ -14,10 +14,12 @@ namespace CafeAlessio.Web.Controllers
     public class HomeController : Controller
     {
         private readonly IUserService _userService;
+        private readonly IMapper _mapper;
 
-        public HomeController(IUserService userService)
+        public HomeController(IUserService userService, IMapper mapper)
         {
             _userService = userService;
+            _mapper = mapper;
         }
 
         // GET: Home
@@ -25,9 +27,7 @@ namespace CafeAlessio.Web.Controllers
         {
             IEnumerable<UserEntity> users = _userService.GetUsers();
 
-            Mapper.Map<IEnumerable<UserViewModel>>(users);
-
-            return View(users);
+            return View(_mapper.Map<IEnumerable<UserViewModel>>(users));
         }
 
         // GET: Home/Details/5

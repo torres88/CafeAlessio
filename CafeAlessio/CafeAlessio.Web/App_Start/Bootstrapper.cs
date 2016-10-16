@@ -3,8 +3,9 @@ using Autofac.Integration.Mvc;
 using AutoMapper;
 using CafeAlessio.Domain.Entities;
 using CafeAlessio.Service;
+using CafeAlessio.Service.Concrete;
+using CafeAlessio.Web.Areas.Admin.Models;
 using CafeAlessio.Web.Models;
-using CafeAlessio.Web.Models.Mapping;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -19,10 +20,9 @@ namespace CafeAlessio.Web.App_Start
     {
         public static void Run()
         {
-            ServiceModule.InitDB();
+            DatabaseService.InitDB();
 
             SetAutofacContainer();
-            AutoMapperConfiguration.Configure();
         }
 
         private static void SetAutofacContainer()

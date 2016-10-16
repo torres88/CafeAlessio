@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CafeAlessio.Domain
+namespace CafeAlessio.Web.Models
 {
-    public interface IEntityBase
+    public interface IViewModel
     {
-        int Id { get; set; }
     }
 }

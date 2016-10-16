@@ -23,10 +23,5 @@ namespace CafeAlessio.Service
 
             
         }
-        
-        public static void InitDB()
-        {
-            Utils.InitDB();
-        }      
     }
 }

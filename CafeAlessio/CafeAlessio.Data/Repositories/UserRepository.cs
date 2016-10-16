@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CafeAlessio.Data.Repositories
 {
-    public class UserRepository : EntityBaseRepository<UserEntity>, IUserRepository
+    public class UserRepository : RepositoryBase<UserEntity>, IUserRepository
     {
         public UserRepository(AlessioContext context) : base(context) { }
     }
