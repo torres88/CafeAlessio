@@ -1,12 +1,13 @@
-﻿using System;
+﻿using CafeAlessio.Web.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
+using CafeAlessio.Domain.Entities;
 
-namespace CafeAlessio.Domain.Entities
+namespace CafeAlessio.Web.Areas.Admin.Models
 {
-    public class ProductEntity : EntityBase
+    public class ProductViewModel : ViewModelBase
     {
         public decimal Price
         {
@@ -47,6 +48,5 @@ namespace CafeAlessio.Domain.Entities
         public bool IsSpicy { get; set; }
 
         public bool IsVega { get; set; }
-
     }
 }

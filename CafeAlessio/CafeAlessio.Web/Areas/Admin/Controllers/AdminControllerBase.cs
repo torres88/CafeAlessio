@@ -18,8 +18,8 @@ namespace CafeAlessio.Web.Areas.Admin.Controllers
         where TEntity : IEntity
         where TViewModel : IViewModel
     {
-        protected TService _service;
-        protected IMapper _mapper;
+        private readonly TService _service;
+        private readonly IMapper _mapper;
 
         public AdminControllerBase(TService service, IMapper mapper)
         {

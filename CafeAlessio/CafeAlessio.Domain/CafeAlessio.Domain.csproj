@@ -43,6 +43,7 @@
     <Compile Include="Entities\EntityBase.cs" />
     <Compile Include="Entities\ProductEntity.cs" />
     <Compile Include="Entities\ProductType.cs" />
+    <Compile Include="Helper\MeasureEnum.cs" />
     <Compile Include="Entities\UserEntity.cs" />
     <Compile Include="IEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
