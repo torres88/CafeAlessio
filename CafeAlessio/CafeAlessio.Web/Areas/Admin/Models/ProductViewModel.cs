@@ -15,11 +15,11 @@ namespace CafeAlessio.Web.Areas.Admin.Models
             set;
         }
 
-        public ProductType ProductType
-        {
-            get;
-            set;
-        }
+        //public ProductTypeEntity ProductType
+        //{
+        //    get;
+        //    set;
+        //}
 
         public string Description
         {
@@ -48,5 +48,9 @@ namespace CafeAlessio.Web.Areas.Admin.Models
         public bool IsSpicy { get; set; }
 
         public bool IsVega { get; set; }
+
+        public int ProductTypeId { get; set; }
+
+        public string ProductTypeName { get; set; }
     }
 }

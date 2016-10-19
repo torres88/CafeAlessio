@@ -11,13 +11,18 @@ namespace CafeAlessio.Data
     public class AlessioContext : DbContext
     {
         public DbSet<UserEntity> Users { get; set; }
+        public DbSet<ProductEntity> Products { get; set; }
+        public DbSet<ProductTypeEntity> ProductType { get; set; }
 
         public AlessioContext() : base("CafeAlessio") { }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<UserEntity>()
-            .ToTable("User");
+            //modelBuilder.Entity<UserEntity>()
+            //.ToTable("User");
+
+            //modelBuilder.Entity<ProductEntity>()
+            //    .HasRequired(ProductTypeEntity);
         }
 
         
