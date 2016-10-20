@@ -13,7 +13,7 @@ namespace CafeAlessio.Service
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<AlessioContext>().As<AlessioContext>().InstancePerRequest();
+            builder.RegisterType<AlessioContext>();
 
             // Repositories
             builder.RegisterAssemblyTypes(typeof(UserRepository).Assembly)
