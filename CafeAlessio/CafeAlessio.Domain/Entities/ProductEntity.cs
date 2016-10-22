@@ -20,6 +20,12 @@ namespace CafeAlessio.Domain.Entities
             set;
         }
 
+        public ProductType ProductSubType
+        {
+            get;
+            set;
+        }
+
         public string Description
         {
             get;
