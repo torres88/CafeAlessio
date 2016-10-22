@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace CafeAlessio.Domain.Entities
 {
+    [Table("Product")]
     public class ProductEntity : EntityBase
     {
         public decimal Price
@@ -14,7 +16,7 @@ namespace CafeAlessio.Domain.Entities
             set;
         }
 
-        public ProductType ProductType
+        public ProductTypeEntity ProductType
         {
             get;
             set;
@@ -53,6 +55,9 @@ namespace CafeAlessio.Domain.Entities
         public bool IsSpicy { get; set; }
 
         public bool IsVega { get; set; }
+
+        [ForeignKey("ProductType")]
+        public int ProductTypeId { get; set; }
 
     }
 }

@@ -47,9 +47,13 @@ namespace CafeAlessio.Web.App_Start
             var config = new MapperConfiguration(cfg =>
             {
                 cfg.CreateMap<UserEntity, UserViewModel>();
+                    //.ForMember(d => d.Email, o => o.MapFrom(src => src.Email));
+
+                cfg.CreateMap<ProductEntity, ProductViewModel>();
+                //   .ForMember(d => d., o => o.MapFrom(src => src.Email));
             });
 
-            var mapper = config.CreateMapper();
+            IMapper mapper = config.CreateMapper();
 
             builder.RegisterInstance<IMapper>(mapper);
 

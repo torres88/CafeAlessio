@@ -52,12 +52,14 @@
     <Compile Include="Abstract\IProductRepository.cs" />
     <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="Abstract\IUserRepository.cs" />
+    <Compile Include="Abstract\IWineDinnerRepository.cs" />
     <Compile Include="AlessioContext.cs" />
     <Compile Include="AlessioInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ProductRepository.cs" />
     <Compile Include="Repositories\RepositoryBase.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
+    <Compile Include="Repositories\WineDinnerRepository.cs" />
     <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>
