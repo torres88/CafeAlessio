@@ -49,15 +49,56 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IDailyOfferRepository.cs" />
+    <Compile Include="Abstract\IProductGroupRepository.cs" />
     <Compile Include="Abstract\IProductRepository.cs" />
+    <Compile Include="Abstract\IProductTypeRepository.cs" />
     <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="Abstract\IUserRepository.cs" />
     <Compile Include="Abstract\IWineDinnerRepository.cs" />
+    <Compile Include="Abstract\ISiteMenuRepository.cs" />
     <Compile Include="AlessioContext.cs" />
     <Compile Include="AlessioInitializer.cs" />
+    <Compile Include="Migrations\201612181106025_InitialCreate.cs" />
+    <Compile Include="Migrations\201612181106025_InitialCreate.Designer.cs">
+      <DependentUpon>201612181106025_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702111900239_Initial.cs" />
+    <Compile Include="Migrations\201702111900239_Initial.Designer.cs">
+      <DependentUpon>201702111900239_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702152112143_Initil.cs" />
+    <Compile Include="Migrations\201702152112143_Initil.Designer.cs">
+      <DependentUpon>201702152112143_Initil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702221910169_Initial1.cs" />
+    <Compile Include="Migrations\201702221910169_Initial1.Designer.cs">
+      <DependentUpon>201702221910169_Initial1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703091114128_Initial2.cs" />
+    <Compile Include="Migrations\201703091114128_Initial2.Designer.cs">
+      <DependentUpon>201703091114128_Initial2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703091123200_Initial3.cs" />
+    <Compile Include="Migrations\201703091123200_Initial3.Designer.cs">
+      <DependentUpon>201703091123200_Initial3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703091148089_Initial4.cs" />
+    <Compile Include="Migrations\201703091148089_Initial4.Designer.cs">
+      <DependentUpon>201703091148089_Initial4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703091513043_Initial5.cs" />
+    <Compile Include="Migrations\201703091513043_Initial5.Designer.cs">
+      <DependentUpon>201703091513043_Initial5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\DailyOfferRepository.cs" />
+    <Compile Include="Repositories\ProductGroupRepository.cs" />
     <Compile Include="Repositories\ProductRepository.cs" />
+    <Compile Include="Repositories\ProductTypeRepository.cs" />
     <Compile Include="Repositories\RepositoryBase.cs" />
+    <Compile Include="Repositories\SiteMenuRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
     <Compile Include="Repositories\WineDinnerRepository.cs" />
     <Compile Include="Utils.cs" />
@@ -71,6 +112,32 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201612181106025_InitialCreate.resx">
+      <DependentUpon>201612181106025_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702111900239_Initial.resx">
+      <DependentUpon>201702111900239_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702152112143_Initil.resx">
+      <DependentUpon>201702152112143_Initil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702221910169_Initial1.resx">
+      <DependentUpon>201702221910169_Initial1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703091114128_Initial2.resx">
+      <DependentUpon>201703091114128_Initial2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703091123200_Initial3.resx">
+      <DependentUpon>201703091123200_Initial3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703091148089_Initial4.resx">
+      <DependentUpon>201703091148089_Initial4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703091513043_Initial5.resx">
+      <DependentUpon>201703091513043_Initial5.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -20,34 +20,38 @@ namespace CafeAlessio.Service.Concrete
             _repository = repository;
         }
 
-        public void Create(TEntity entity)
+        public virtual void Create(TEntity entity)
         {
-            throw new NotImplementedException();
+            _repository.Add(entity);
+            _repository.Commit();
         }
 
-        public void Delete(TEntity entity)
+        public virtual void Delete(TEntity entity)
         {
-            throw new NotImplementedException();
+            _repository.Delete(entity);
+            _repository.Commit();
         }
 
-        public TEntity GetById(int id)
+        public virtual TEntity GetById(int id)
         {
             return _repository.GetSingle(id);
         }
 
-        public IEnumerable<TEntity> List()
+        public virtual IEnumerable<TEntity> List()
         {
             return _repository.GetAll();
         }
 
-        public void Save(TEntity entity)
+        public virtual void Save(TEntity entity)
         {
-            throw new NotImplementedException();
+            _repository.Update(entity);
+            _repository.Commit();
         }
 
-        public void Update(TEntity entity)
+        public virtual void Update(TEntity entity)
         {
-            throw new NotImplementedException();
+            _repository.Update(entity);
+            _repository.Commit();
         }
     }
 }

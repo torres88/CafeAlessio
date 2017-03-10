@@ -13,7 +13,7 @@ namespace CafeAlessio.Data.Repositories
 {
     public class RepositoryBase<T> : IRepository<T> where T : class, IEntity, new()
     {
-        private AlessioContext _context;
+        protected AlessioContext _context;
 
         #region Properties
         public RepositoryBase(AlessioContext context)
@@ -68,17 +68,28 @@ namespace CafeAlessio.Data.Repositories
 
         public virtual void Add(T entity)
         {
+            entity.CreationDate = DateTime.Now;
+            entity.ModificationDate = DateTime.Now;
+            //entity.CreatedBy = 
+            //entity.ModifiedBy =
+
             DbEntityEntry dbDbEntityEntry = _context.Entry<T>(entity);
             _context.Set<T>().Add(entity);
         }
 
         public virtual void Update(T entity)
         {
+            entity.ModificationDate = DateTime.Now;
+            //entity.ModifiedBy =
+
             DbEntityEntry dbDbEntityEntry = _context.Entry<T>(entity);
             dbDbEntityEntry.State = EntityState.Modified;
         }
         public virtual void Delete(T entity)
         {
+            entity.ModificationDate = DateTime.Now;
+            //entity.ModifiedBy =
+
             DbEntityEntry dbDbEntityEntry = _context.Entry<T>(entity);
             dbDbEntityEntry.State = EntityState.Deleted;
         }
@@ -89,6 +100,9 @@ namespace CafeAlessio.Data.Repositories
 
             foreach (var entity in entities)
             {
+                entity.ModificationDate = DateTime.Now;
+                //entity.ModifiedBy =
+
                 _context.Entry<T>(entity).State = EntityState.Deleted;
             }
         }

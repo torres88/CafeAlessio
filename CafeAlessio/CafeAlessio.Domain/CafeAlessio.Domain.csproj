@@ -41,14 +41,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\DailyOfferEntity.cs" />
     <Compile Include="Entities\EntityBase.cs" />
+    <Compile Include="Entities\LocalizedEntityBase.cs" />
     <Compile Include="Entities\ProductEntity.cs" />
+    <Compile Include="Entities\ProductGroupEntity.cs" />
     <Compile Include="Entities\ProductTypeEntity.cs" />
+    <Compile Include="Entities\SiteMenuEntity.cs" />
     <Compile Include="Entities\WineDinnerEntity.cs" />
+    <Compile Include="Entities\Wines.cs" />
+    <Compile Include="Enums\ProductGroup.cs" />
     <Compile Include="Helper\MeasureEnum.cs" />
     <Compile Include="Entities\UserEntity.cs" />
     <Compile Include="IEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

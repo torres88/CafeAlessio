@@ -13,5 +13,11 @@ namespace CafeAlessio.Domain.Entities
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
+
+        public bool Active { get; set; }
+        public DateTime CreationDate { get; set; }
+        public string CreatedBy { get; set; }
+        public DateTime ModificationDate { get; set; }
+        public string ModifiedBy { get; set; }
     }
 }

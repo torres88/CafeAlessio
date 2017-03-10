@@ -41,16 +41,23 @@ namespace CafeAlessio.Web.App_Start
                .Where(t => t.Name.EndsWith("Service"))
                .AsImplementedInterfaces().InstancePerRequest();
 
-
             //Mapper.Initialize(cfg => cfg.CreateMap<UserEntity, UserViewModel>());
             //Mapper.Initialize(cfg => cfg.CreateMap<UserEntity, UserViewModel>());
             var config = new MapperConfiguration(cfg =>
             {
                 cfg.CreateMap<UserEntity, UserViewModel>();
-                    //.ForMember(d => d.Email, o => o.MapFrom(src => src.Email));
+                cfg.CreateMap<UserViewModel, UserEntity>();
+                cfg.CreateMap<ProductTypeViewModel, ProductTypeEntity>();
+                cfg.CreateMap<SiteMenuViewModel, SiteMenuEntity>();
+                cfg.CreateMap<DailyOfferViewModel, DailyOfferEntity>();
+                //.ForMember(d => d.Email, o => o.MapFrom(src => src.Email));
 
                 cfg.CreateMap<ProductEntity, ProductViewModel>();
-                //   .ForMember(d => d., o => o.MapFrom(src => src.Email));
+                cfg.CreateMap<ProductViewModel,ProductEntity>();
+                cfg.CreateMap<ProductTypeEntity,ProductTypeViewModel>();
+                cfg.CreateMap<SiteMenuEntity, SiteMenuViewModel>();
+                cfg.CreateMap<DailyOfferEntity, DailyOfferViewModel>();
+                // .ForMember(d => d., o => o.MapFrom(src => src.Email));
             });
 
             IMapper mapper = config.CreateMapper();

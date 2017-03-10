@@ -18,8 +18,8 @@ namespace CafeAlessio.Web.Areas.Admin.Controllers
         where TEntity : IEntity
         where TViewModel : IViewModel
     {
-        private readonly TService _service;
-        private readonly IMapper _mapper;
+        protected readonly TService _service;
+        protected readonly IMapper _mapper;
 
         public AdminControllerBase(TService service, IMapper mapper)
         {
@@ -34,17 +34,17 @@ namespace CafeAlessio.Web.Areas.Admin.Controllers
 
         public virtual ActionResult Edit(int id)
         {
-            return View(this._service.GetById(id));
+            return View(_mapper.Map<TViewModel>(this._service.GetById(id)));
         }
 
         [HttpPost]
-        public virtual ActionResult Edit(TEntity entity)
+        public virtual ActionResult Edit(TViewModel viewModel)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    this._service.Update(entity);
+                    this._service.Update(_mapper.Map<TEntity>(viewModel));
 
                 }
             }
@@ -59,17 +59,18 @@ namespace CafeAlessio.Web.Areas.Admin.Controllers
 
         public virtual ActionResult Create()
         {
-            return View(Activator.CreateInstance<TEntity>());
+            return View(Activator.CreateInstance<TViewModel>());
         }
 
         [HttpPost]
-        public virtual ActionResult Create(TEntity entity)
+        public virtual ActionResult Create(TViewModel viewModel)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    this._service.Create(entity);
+                    
+                    this._service.Create(_mapper.Map<TEntity>(viewModel));
 
                 }
             }

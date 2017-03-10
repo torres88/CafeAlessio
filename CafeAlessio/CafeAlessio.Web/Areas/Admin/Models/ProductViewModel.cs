@@ -4,11 +4,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using CafeAlessio.Domain.Entities;
+using System.Web.Mvc;
 
 namespace CafeAlessio.Web.Areas.Admin.Models
 {
     public class ProductViewModel : ViewModelBase
     {
+        public string NameHun
+        {
+            get;
+            set;
+        }
+
+        public string NameIta
+        {
+            get;
+            set;
+        }
+
+        public string NameEng
+        {
+            get;
+            set;
+        }
+
         public decimal Price
         {
             get;
@@ -51,6 +70,6 @@ namespace CafeAlessio.Web.Areas.Admin.Models
 
         public int ProductTypeId { get; set; }
 
-        public string ProductTypeName { get; set; }
+        public SelectList ProductTypeList { get; set; }
     }
 }

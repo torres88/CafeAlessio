@@ -240,3 +240,30 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/CafeAlessio/CafeAlessio.Data/Migrations/201703091513043_Initial5.resx
+/CafeAlessio/CafeAlessio.Data/Migrations/201703091513043_Initial5.Designer.cs
+/CafeAlessio/CafeAlessio.Data/Migrations/201703091513043_Initial5.cs
+/CafeAlessio/CafeAlessio.Data/Migrations/201703091148089_Initial4.resx
+/CafeAlessio/CafeAlessio.Data/Migrations/201703091148089_Initial4.Designer.cs
+/CafeAlessio/CafeAlessio.Data/Migrations/201703091148089_Initial4.cs
+/CafeAlessio/CafeAlessio.Data/Migrations/201703091123200_Initial3.resx
+/CafeAlessio/CafeAlessio.Data/Migrations/201703091123200_Initial3.Designer.cs
+/CafeAlessio/CafeAlessio.Data/Migrations/201703091123200_Initial3.cs
+/CafeAlessio/CafeAlessio.Data/Migrations/201703091114128_Initial2.resx
+/CafeAlessio/CafeAlessio.Data/Migrations/201703091114128_Initial2.Designer.cs
+/CafeAlessio/CafeAlessio.Data/Migrations/201703091114128_Initial2.cs
+/CafeAlessio/CafeAlessio.Data/Migrations/201702221910169_Initial1.resx
+/CafeAlessio/CafeAlessio.Data/Migrations/201702221910169_Initial1.Designer.cs
+/CafeAlessio/CafeAlessio.Data/Migrations/201702221910169_Initial1.cs
+/CafeAlessio/CafeAlessio.Data/Migrations/201702152112143_Initil.resx
+/CafeAlessio/CafeAlessio.Data/Migrations/201702152112143_Initil.Designer.cs
+/CafeAlessio/CafeAlessio.Data/Migrations/201702152112143_Initil.cs
+/CafeAlessio/CafeAlessio.Data/Migrations/201702111900239_Initial.resx
+/CafeAlessio/CafeAlessio.Data/Migrations/201702111900239_Initial.Designer.cs
+/CafeAlessio/CafeAlessio.Data/Migrations/201702111900239_Initial.cs
+/CafeAlessio/CafeAlessio.Data/Migrations/201612181106025_InitialCreate.resx
+/CafeAlessio/CafeAlessio.Data/Migrations/201612181106025_InitialCreate.Designer.cs
+/CafeAlessio/CafeAlessio.Data/Migrations/201612181106025_InitialCreate.cs
+*.cd
+/UML
+/UML_

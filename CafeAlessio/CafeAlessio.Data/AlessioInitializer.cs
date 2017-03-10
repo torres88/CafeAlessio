@@ -22,14 +22,16 @@ namespace CafeAlessio.Data
 
             var productTypes = new List<ProductTypeEntity>()
             {
-                new ProductTypeEntity() { Id= 1,Name = "Termékcsoport 1" },
-                new ProductTypeEntity() { Id= 2,Name ="Termékcsoport 2" },
-                new ProductTypeEntity() { Id= 3,Name ="Termékcsoport 3" }
+                new ProductTypeEntity() { Id= 1, NameHUN = "Termékcsoport 1" },
+                new ProductTypeEntity() { Id= 2,NameHUN ="Termékcsoport 2" },
+                new ProductTypeEntity() { Id= 3,NameHUN ="Termékcsoport 3" }
             };
 
             var products = new List<ProductEntity>()
             {
-                new ProductEntity() { Id=1,Description ="Termék leírása",ImageName = "Kép neve", IsSpicy = true, IsVega = true, Measure = MeasureEnum.dl, Price = 250.05M, ProductType = productTypes[0],ProductTypeId = 1,Unit = 1}
+                new ProductEntity() {
+                        Id =1,
+                    DescriptionHun ="Termék leírása",ImageName = "Kép neve", IsSpicy = true, IsVega = true, Measure = MeasureEnum.dl, Price = 250.05M, ProductType = productTypes[0],ProductTypeId = 1,Unit = 1}
             };
         }
     }

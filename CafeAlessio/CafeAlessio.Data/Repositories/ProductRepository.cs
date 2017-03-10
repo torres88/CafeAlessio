@@ -11,6 +11,13 @@ namespace CafeAlessio.Data.Repositories
     public class ProductRepository : RepositoryBase<ProductEntity>, IProductRepository
     {
         public ProductRepository(AlessioContext context) : base(context) { }
-    
+
+        public override IEnumerable<ProductEntity> GetAll()
+        {
+            return this.AllIncluding(product => product.ProductType);
+                                        //.OrderBy(product => product.)
+                                        //.ThenBy(answer => answer.Text);
+        }
+
     }
 }

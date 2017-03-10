@@ -14,7 +14,6 @@ namespace CafeAlessio.Domain.Entities
         public DateTime PublishDate { get; set; }
         public DateTime ExpirationDate { get; set; }
         public string ImageName { get; set; }
-        public string ImageFile { get; set; }
-        public bool Active { get; set; }
+        public string ImageFile { get; set; }        
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -8,9 +9,10 @@ using System.Threading.Tasks;
 namespace CafeAlessio.Domain.Entities
 {
     [Table("ProductType")]
-    public class ProductTypeEntity : EntityBase
+    public class ProductTypeEntity : LocalizedEntityBase
     {
-        public string Name { get; set; }
-        public ProductType SubProductType { get; set; }
+        public ProductTypeEntity SubProductType { get; set; }
+
+        public List<ProductEntity> Products { get; set; }
     }
 }

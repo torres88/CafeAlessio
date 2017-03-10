@@ -9,11 +9,13 @@ using System.Threading.Tasks;
 
 namespace CafeAlessio.Service.Concrete
 {
-    public class ProductService : CafeAlessioServiceBase<ProductEntity>, IProductService
+    public class ProductService : CafeAlessioServiceBase<ProductTypeEntity>, IProductService
     {
-        public ProductService(IRepository<ProductEntity> repository)
+        public ProductService(IRepository<ProductTypeEntity> repository)
             : base(repository)
         {
         }
+
+        
     }
 }
