@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CafeAlessio.Service.Abstract
 {
-    public interface IDailyOfferService : ICafeAlessioService<DailyOfferEntity>
+    public interface IDailyOfferService : ICafeAlessioService<DailyOfferItemEntity>
     {
     }
 }

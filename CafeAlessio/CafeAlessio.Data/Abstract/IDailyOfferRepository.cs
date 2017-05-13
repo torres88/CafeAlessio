@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CafeAlessio.Data.Abstract
 {
-    public interface IDailyOfferRepository : IRepository<DailyOfferEntity>
+    public interface IDailyOfferRepository : IRepository<DailyOfferItemEntity>
     {
     }
 }

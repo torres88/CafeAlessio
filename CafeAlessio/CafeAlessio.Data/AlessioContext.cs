@@ -16,7 +16,7 @@ namespace CafeAlessio.Data
         public DbSet<ProductGroupEntity> ProductGroup { get; set; }
         public DbSet<WineDinnerEntity> WineDinner { get; set; }
         public DbSet<SiteMenuEntity> SiteMenu { get; set; }
-        public DbSet<DailyOfferEntity> DailyOffer { get; set; }
+        public DbSet<DailyOfferItemEntity> DailyOffer { get; set; }
 
         public AlessioContext() : base("CafeAlessio") { }
 

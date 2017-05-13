@@ -11,9 +11,8 @@ namespace CafeAlessio.Web.App_Start
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                "~/Scripts/jquery-1.10.2.js"//,
-                                                //"~/Scripts/jquery-ui-1.10.4.min.js",
-                                                //"~/Scripts/jquery.base64.js"
+                "~/Scripts/jquery-1.12.4.js",
+                "~/Scripts/jquery-ui-1.12.1.min.js"
                 ));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(

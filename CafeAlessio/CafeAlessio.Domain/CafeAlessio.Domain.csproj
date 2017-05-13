@@ -41,7 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\DailyOfferEntity.cs" />
+    <Compile Include="Entities\DailyOfferItemEntity.cs" />
+    <Compile Include="Entities\DailyOfferHeaderEntity.cs" />
     <Compile Include="Entities\EntityBase.cs" />
     <Compile Include="Entities\LocalizedEntityBase.cs" />
     <Compile Include="Entities\ProductEntity.cs" />

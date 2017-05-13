@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 
 namespace CafeAlessio.Domain.Entities
 {
-    [Table("DailyOffer")]
-    public class DailyOfferEntity : LocalizedEntityBase
+    [Table("DailyOfferItem")]
+    public class DailyOfferItemEntity : LocalizedEntityBase
     {
         [Required]
         public decimal Price { get; set; }

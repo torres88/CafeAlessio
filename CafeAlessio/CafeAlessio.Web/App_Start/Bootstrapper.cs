@@ -49,14 +49,14 @@ namespace CafeAlessio.Web.App_Start
                 cfg.CreateMap<UserViewModel, UserEntity>();
                 cfg.CreateMap<ProductTypeViewModel, ProductTypeEntity>();
                 cfg.CreateMap<SiteMenuViewModel, SiteMenuEntity>();
-                cfg.CreateMap<DailyOfferViewModel, DailyOfferEntity>();
+                cfg.CreateMap<DailyOfferViewModel, DailyOfferItemEntity>();
                 //.ForMember(d => d.Email, o => o.MapFrom(src => src.Email));
 
                 cfg.CreateMap<ProductEntity, ProductViewModel>();
                 cfg.CreateMap<ProductViewModel,ProductEntity>();
                 cfg.CreateMap<ProductTypeEntity,ProductTypeViewModel>();
                 cfg.CreateMap<SiteMenuEntity, SiteMenuViewModel>();
-                cfg.CreateMap<DailyOfferEntity, DailyOfferViewModel>();
+                cfg.CreateMap<DailyOfferItemEntity, DailyOfferViewModel>();
                 // .ForMember(d => d., o => o.MapFrom(src => src.Email));
             });
 

@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace CafeAlessio.Data.Repositories
 {
-    public class DailyOfferRepository : RepositoryBase<DailyOfferEntity>, IDailyOfferRepository
+    public class DailyOfferRepository : RepositoryBase<DailyOfferItemEntity>, IDailyOfferRepository
     {
         public DailyOfferRepository(AlessioContext context) : base(context) { }
 
-        public override IEnumerable<DailyOfferEntity> GetAll()
+        public override IEnumerable<DailyOfferItemEntity> GetAll()
         {
             return this.AllIncluding()
             .OrderBy(dailyOffer => dailyOffer.Index);

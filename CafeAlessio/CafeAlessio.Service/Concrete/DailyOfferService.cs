@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace CafeAlessio.Service.Concrete
 {
-    public class DailyOfferService : CafeAlessioServiceBase<DailyOfferEntity>, IDailyOfferService
+    public class DailyOfferService : CafeAlessioServiceBase<DailyOfferItemEntity>, IDailyOfferService
     {
-        public DailyOfferService(IRepository<DailyOfferEntity> repository)
+        public DailyOfferService(IRepository<DailyOfferItemEntity> repository)
             : base(repository)
         {
         }
